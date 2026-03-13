@@ -19,14 +19,29 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
-console.log("The result is: " + result);
+// Part 1: Debugging Challenge
 
-let isValid = Boolean("false");
+
+let result = "5" - 2; 
+console.log("The result is: " + result);
+console.log("Type of result:", typeof result); 
+
+
+let isValid = Boolean("false"); 
+console.log("Before fix, isValid:", isValid); 
+
+
+isValid = ("false" === "true"); 
 if (isValid) {
     console.log("This is valid!");
+} else {
+    console.log("This is NOT valid!"); 
 }
+console.log("After fix, isValid:", isValid); 
+console.log("Type of isValid:", typeof isValid); 
+
 
 let age = "25";
-let totalAge = age + 5;
-console.log("Total Age: " + totalAge);
+let totalAge = Number(age) + 5; 
+console.log("Total Age: " + totalAge); 
+console.log("Type of totalAge:", typeof totalAge); 
